@@ -1,5 +1,6 @@
 # UASPenjualanBarang
 Penjualan barang android studio => Link Youtube >>>>  https://youtu.be/dWa1TkYfb3E
+                                   Link JSON    >>>>  https://jsonformatter.org/d16bd5
 
 
 
