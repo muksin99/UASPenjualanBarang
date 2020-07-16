@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text="Nama Pembeli :"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/namapelanggan"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height ="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Barang   :"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/namabarang"
+                android:text = "" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Beli      :"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary" />
+            <EditText
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:id= "@+id/jumlahbeli"
+                android:text= ""
+                android:inputType ="number" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:text="Harga (Rp)        :"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id= "@+id/harga"
+                android:text=""
+                android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width= "wrap_content"
+                android:layout_height= "wrap_content"
+                android:text="Bayar (Rp)        :"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id= "@+id/uangbayar"
+                android:text=""
+                android:inputType="number"/>
+        </LinearLayout>
+        <Button
+            android:layout_marginTop = "5dp"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/tombol1"
+            android:text = "PROSES"
+            android:background = "@color/colorAccent"
+            android:textStyle = "bold"
+            android:textColor = "#ffffff"/>
+        <TextView
+            android:layout_marginTop = "15dp"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "Total Belanja(Rp)         :"
+            android:textColor = "@color/colorPrimary"
+            android:id="@+id/totalbelanja"
+            android:textStyle = "bold"
+            android:textSize = "18dp"
+            android:layout_marginBottom = "2dp" />
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "Kembalian(Rp)              :"
+            android:textColor = "@color/colorPrimary"
+            android:id = "@+id/uangkembali"
+            android:textStyle = "bold"
+            android:textSize = "18dp"
+            android:layout_marginBottom = "2dp" />
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "Ket(Lunas/Hutang)       :"
+            android:textColor = "@color/colorPrimary"
+            android:id = "@+id/Keterangan"
+            android:textStyle = "bold"
+            android:textSize = "18dp" />
+        <LinearLayout
+            android:layout_marginTop = "20dp"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:gravity = "center"
+            android:orientation = "horizontal">
+            <Button
+                android:layout_width = "150dp"
+                android:layout_height = "wrap_content"
+                android:id = "@+id/tombol2"
+                android:text = "RESET"
+                android:background = "@color/colorAccent"
+                android:textStyle = "bold"
+                android:textColor = "#ffffff" />
+            <Button
+                android:layout_width="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:id = "@+id/tombol3"
+                android:text = "TUTUP"
+                android:background="@color/colorAccent"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <Button
+            android:layout_marginTop = "5dp"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/tombol4"
+            android:text = "MENU BARANG"
+            android:background = "@color/colorAccent"
+            android:textStyle = "bold"
+            android:textColor = "#ffffff"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
